@@ -8,6 +8,7 @@ const Navbar = () => {
                     <div className="flex-shrink-0">
                         <a href="/Bryaxis">
                             <span className="text-[#bd93f9] text-3xl font-semibold">Bryaxis</span>
+                            <span className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-semibold">Audiobooks</span>
                         </a>
                     </div>
                     <div className="hidden md:block">

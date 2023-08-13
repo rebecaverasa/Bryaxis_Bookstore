@@ -1,11 +1,11 @@
-import ItemCount from "./ItemCount";
+// import ItemCount from "./ItemCount";
 
-const Greeting = () => {
-    return (
-        <div>
-            <ItemCount/>
-        </div>
-    );
-};
+// const Greeting = () => {
+//     return (
+//         <div>
+//             <ItemCount/>
+//         </div>
+//     );
+// };
 
-export default Greeting;
+// export default Greeting;

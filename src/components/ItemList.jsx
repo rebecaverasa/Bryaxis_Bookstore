@@ -57,7 +57,7 @@ const ItemList = () => {
   return (
     <div className="px-10"> {/* Adiciona espaço nas laterais */}
       <h1 className="text-[#282a36] text-4xl font-bold text-center mb-7 mt-16">Catálogo</h1>
-      <div className="flex justify-center">
+      <div className="justify-center">
         <div className="grid grid-cols-5 gap-2"> {/* Ajusta o espaçamento entre os produtos */}
           {items.map((item) => (
             <div key={item.id} className="p-6 border border-gray-300 m-1"> {/* Adiciona a borda cinza */}

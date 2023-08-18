@@ -1,65 +1,57 @@
-// /* eslint-disable no-unused-vars */
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
-// const ItemCount = () => {
-//     const stock = 20;
-//     const [quantity, setQuantity] = useState(1); 
+const ItemCount = ({ stock, onAddToCart }) => {
+  const [quantity, setQuantity] = useState(1);
 
-//     const handleIncrement = () => {
-//         if (quantity < stock) {
-//             setQuantity((prevQuantity) => prevQuantity + 1);
-//         }
-//     };
+  const handleIncrement = () => {
+    if (quantity < stock) {
+      setQuantity(prevQuantity => prevQuantity + 1);
+    }
+  };
 
-//     const handleDecrement = () => {
-//         if (quantity > 0) {
-//             setQuantity((prevQuantity) => prevQuantity - 1);
-//         }
-//     };
+  const handleDecrement = () => {
+    if (quantity > 1) {
+      setQuantity(prevQuantity => prevQuantity - 1);
+    }
+  };
 
-//     const handleAddToCart = () => {
-//         console.log(`Adicionando ${quantity} unidades ao carrinho.`);
-//     };
+  const handleAddToCartClick = () => {
+    onAddToCart(quantity); // Chama a função onAddToCart com a quantidade
+  };
 
-//     return (
-//         <div className="text-center mt-4"> {/* margem de 4 unidades */}
-//             <img
-//                 src="https://a-static.mlcdn.com.br/800x560/livro-corte-de-espinhos-e-rosas-vol-1/magazineluiza/222675000/95c028ee215eb08390f79dafa1dfae7c.jpg"
-//                 alt="Corte de Espinhos e Rosas - Audiobook"
-//                 className="w-32 h-auto mx-auto mb-4"
-//             />
+  return (
+    <div className="flex flex-col items-center"> {/* Centraliza verticalmente */}
+      <div className="flex items-center justify-center mb-2"> {/* Centraliza horizontalmente */}
+        <button
+          className="px-2 py-0.5 bg-[#dfdfdf] text-gray-700 rounded-l-md hover:bg-[#dfdfdf] focus:outline-none"
+          onClick={handleDecrement}
+        >
+          -
+        </button>
+        <div className="px-2 py-0.5 bg-gray-100 text-gray-900">
+          {quantity}
+        </div>
+        <button
+          className="px-2 py-0.5 bg-[#dfdfdf] text-gray-700 rounded-r-md hover:bg-[#dfdfdf] focus:outline-none"
+          onClick={handleIncrement}
+        >
+          +
+        </button>
+      </div>
+      <button
+        className="px-2 py-1 bg-[#bd93f9] text-white rounded-md hover:bg-black focus:outline-none"
+        onClick={handleAddToCartClick}
+      >
+        Adicionar ao carrinho
+      </button>
+    </div>
+  );
+};
 
-//             <p className="text-lg font-semibold">Corte de Espinhos e Rosas - Audiobook</p>
-//             <p className="text-sm text-gray-600 mb-4">Em estoque: {stock}</p>
+ItemCount.propTypes = {
+  stock: PropTypes.number.isRequired,
+  onAddToCart: PropTypes.func.isRequired,
+};
 
-//             <div className="flex items-center justify-center">
-//                 <button
-//                     className="px-1 py-0.5 bg-[#bd93f9] text-gray-300 rounded-l-md hover:bg-[#bd93f9] focus:outline-none"
-//                     onClick={handleDecrement}
-//                 >
-//                     -
-//                 </button>
-//                 <div className="px-1 py-0.5 bg-gray-100 text-gray-900">
-//                     {quantity}
-//                 </div>
-//                 <button
-//                     className="px-1 py-0.5 bg-[#bd93f9] text-gray-300 rounded-r-md hover:bg-[#bd93f9] focus:outline-none"
-//                     onClick={handleIncrement}
-//                 >
-//                     +
-//                 </button>
-//             </div>
-//             <div>
-                
-//             </div>
-//             <button
-//                 className="mt-5 px-1 py-0.5 bg-[#646472] text-white rounded-md hover:bg-black focus:outline-none"
-//                 onClick={handleAddToCart}
-//             >
-//                 Adicionar ao carrinho
-//             </button>
-//         </div>
-//     );
-// };
-
-// export default ItemCount;
+export default ItemCount;

@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { useCartContext } from './CartContext';
 
 const ItemCount = ({ stock, onAddToCart }) => {
   const [quantity, setQuantity] = useState(1);
+  const { addItem, isInCart } = useCartContext();
 
   const handleIncrement = () => {
     if (quantity < stock) {
@@ -17,7 +19,10 @@ const ItemCount = ({ stock, onAddToCart }) => {
   };
 
   const handleAddToCartClick = () => {
-    onAddToCart(quantity); // Chama a função onAddToCart com a quantidade
+    if (!isInCart()) {
+      addItem(quantity); // Chame a função addItem do contexto
+    }
+    onAddToCart(quantity);
   };
 
   return (

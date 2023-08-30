@@ -4,7 +4,7 @@ import { useCartContext } from './CartContext';
 
 const ItemCount = ({ stock, onAddToCart }) => {
   const [quantity, setQuantity] = useState(1);
-  const { addItem, isInCart } = useCartContext();
+  const { isInCart } = useCartContext();
 
   const handleIncrement = () => {
     if (quantity < stock) {
@@ -20,9 +20,8 @@ const ItemCount = ({ stock, onAddToCart }) => {
 
   const handleAddToCartClick = () => {
     if (!isInCart()) {
-      addItem(quantity); // Chame a função addItem do contexto
+      onAddToCart(quantity);
     }
-    onAddToCart(quantity);
   };
 
   return (

@@ -12,6 +12,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<ItemListContainer />} />
+          <Route path="/Bryaxis" element={<ItemListContainer />} />
           <Route path="/cart" element={<CartPage />} />
         </Routes>
       </CartProvider>

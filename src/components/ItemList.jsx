@@ -4,7 +4,7 @@ import Item from './Item';
 
 const mockItems = [
   {
-    id: 1,
+    id: 100,
     title: 'Corte de Espinhos e Rosas',
     description: 'Ela roubou uma vida. Agora deve pagar com o coração. Em Corte de espinhos e rosas, livro que da início a uma das séries mais queridas pelo público, acompanhe as aventuras de Feyre pelo perigoso e deslumbrante mundo das fadas. Sarah J. Maas é uma verdadeira estrela: após apenas uma semana de vendas, a série Corte de Espinhos e Rosas estreou em segundo lugar na lista do New York Times. Ela também é autora da série Trono de Vidro, que já teve mais de 1 milhão de exemplares vendidos.',
     price: 19.99,
@@ -12,7 +12,7 @@ const mockItems = [
     pictureUrl: 'https://a-static.mlcdn.com.br/800x560/livro-corte-de-espinhos-e-rosas-vol-1/magazineluiza/222675000/95c028ee215eb08390f79dafa1dfae7c.jpg',
   },
   {
-    id: 2,
+    id: 101,
     title: 'Corte de Névoa e Fúria',
     description: 'Por amor ela enganou a morte. Por liberdade, ela se tornará uma arma. Corte de névoa e fúria é o esperado segundo volume da saga iniciada em Corte de espinhos e rosas. Sarah J. Maas é uma verdadeira estrela: após apenas uma semana de vendas, a série Corte de Espinhos e Rosas estreou em segundo lugar na lista do New York Times. Ela também é autora da série Trono de Vidro, que já teve mais de 1 milhão de exemplares vendidos.',
     price: 29.99,
@@ -20,7 +20,7 @@ const mockItems = [
     pictureUrl: 'https://m.media-amazon.com/images/I/81PGQZ8qBlL._AC_UF1000,1000_QL80_.jpg',
   },
   {
-    id: 3,
+    id: 102,
     title: 'Corte de Asas e Ruína',
     description: 'Em meio a guerra, é seu coração que enfrentará a mais árdua das batalhas... Corte de asas e ruína é o eletrizante terceiro volume da série best-seller iniciada em Corte de Espinhos e Rosas. Sarah J. Maas é uma verdadeira estrela: após apenas uma semana de vendas, a série Corte de Espinhos e Rosas estreou em segundo lugar na lista do New York Times. Ela também é autora da série Trono de Vidro, que já teve mais de 1 milhão de exemplares vendidos.',
     price: 29.99,
@@ -28,7 +28,7 @@ const mockItems = [
     pictureUrl: 'https://m.media-amazon.com/images/I/91IWJY6FvtL._AC_UF1000,1000_QL80_.jpg',
   },
   {
-    id: 4,
+    id: 103,
     title: 'Corte de Gelo e Estrelas',
     description: 'A série best seller Corte de Espinhos e Rosas ganha um spin-off em Corte de gelo e estrelas: volume que tem início após os acontecimentos de Corte de asas e ruína. Sarah J. Maas é uma verdadeira estrela: após apenas uma semana de vendas, a série Corte de Espinhos e Rosas estreou em segundo lugar na lista do New York Times. Ela também é autora da série Trono de Vidro, que já teve mais de 1 milhão de exemplares vendidos.',
     price: 29.99,
@@ -36,7 +36,7 @@ const mockItems = [
     pictureUrl: 'https://m.media-amazon.com/images/I/518s41IDWuL._SY344_BO1,204,203,200_QL70_ML2_.jpg',
   },
   {
-    id: 5,
+    id: 104,
     title: 'Corte de Chamas Prateadas',
     description: 'A guerra finalmente chegou ao fim, e a irmã de Feyre, Nestha, brilha em Corte de chamas prateadas, a sedutora e poderosa sequência da aclamada série Corte de espinhos e rosas.',
     price: 29.99,

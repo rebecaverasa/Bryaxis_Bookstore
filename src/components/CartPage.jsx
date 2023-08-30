@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
+import Cart from "./Cart";
 
 const CartPage = () => {
   return (
-    <div>
-      {/* Conteúdo da página do carrinho */}
+    <div className="container mx-auto mt-8">
+      <Cart />
     </div>
   );
 };

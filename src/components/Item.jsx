@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ItemDetailContainer from './ItemDetailContainer';
+import { useCartContext } from './CartContext';
 
 const Item = ({ item }) => {
+  const {addItem} = useCartContext ()
+
   const handleAddToCart = (quantity) => {
     if (quantity > 0) {
-      console.log(`Adicionando ${quantity} unidades de "${item.title}" ao carrinho.`);
+      addItem(item, quantity)
     }
   };
 
@@ -29,11 +32,13 @@ const Item = ({ item }) => {
 
 Item.propTypes = {
   item: PropTypes.shape({
+    id: PropTypes.number.isRequired,
     pictureUrl: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     stock: PropTypes.number.isRequired,
+    quantity: PropTypes.number.isRequired,
   }).isRequired,
 };
 

@@ -13,7 +13,7 @@ const Checkout = () => {
       onClick={handleFinalizePurchase}
       className="px-2 py-1 bg-[#bd93f9] text-white rounded-md hover:bg-black focus:outline-none"
     >
-      Finalizar Compra
+      Ir para o carrinho
     </button>
   );
 };

@@ -8,17 +8,18 @@ const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
 
   const addItem = (item, quantity) => {
-    // Verifica se o item já está no carrinho
     const existingItem = cartItems.find(cartItem => cartItem.id === item.id);
+
     if (existingItem) {
-      // Atualiza a quantidade do item
       const updatedItems = cartItems.map(cartItem =>
-        cartItem.id === item.id ? { ...cartItem, quantity: cartItem.quantity + quantity } : cartItem
+        cartItem.id === item.id
+          ? { ...cartItem, quantity: cartItem.quantity + quantity }
+          : cartItem
       );
       setCartItems(updatedItems);
     } else {
-      // Adiciona o novo item ao carrinho
-      setCartItems([...cartItems, { ...item, quantity }]);
+      const itemToAdd = { ...item, quantity };
+      setCartItems([...cartItems, itemToAdd]);
     }
   };
 

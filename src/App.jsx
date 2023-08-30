@@ -8,10 +8,11 @@ import CartProvider from "./components/CartContext"; // Importe o CartProvider
 function App() {
   return (
     <Router>
-      <CartProvider> {/* Adicione o CartProvider como um wrapper */}
+      <CartProvider>
         <Navbar />
         <Routes>
           <Route path="/" element={<ItemListContainer />} />
+          <Route path="/Bryaxis" element={<ItemListContainer />} />
           <Route path="/cart" element={<CartPage />} />
         </Routes>
       </CartProvider>

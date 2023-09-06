@@ -5,7 +5,8 @@ import { app } from '../services/firebase';
 
 const ItemSearch = () => {
     console.log('ItemSearch renderizado');
-    const { id } = useParams(); // Pega o ID da URL
+    const { id } = useParams();
+    console.log('ID da URL:', id);
     const [item, setItem] = useState(null);
 
     useEffect(() => {
@@ -16,10 +17,8 @@ const ItemSearch = () => {
             try {
                 const itemDocSnapshot = await getDoc(itemDocRef);
                 if (itemDocSnapshot.exists()) {
-                    // O item foi encontrado no Firebase.
                     setItem({ id: itemDocSnapshot.id, ...itemDocSnapshot.data() });
                 } else {
-                    // O item não foi encontrado no Firebase.
                     console.log('Item não encontrado.');
                 }
             } catch (error) {

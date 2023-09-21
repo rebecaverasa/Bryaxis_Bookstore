@@ -9,7 +9,7 @@ This is a final project from the Coder House React Course. We were able to choos
 <h2>What I used to build this project?</h2>
 - React<br>
 - Vite<br>
-- Tailwind
+- Tailwind<br>
 - Nodejs / NPM
 
 <h2>How do you run this project on your machine?</h2>

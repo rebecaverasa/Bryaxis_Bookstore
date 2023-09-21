@@ -32,15 +32,14 @@ const ItemList = () => {
         <div className="md:w-1/2 text-slate-500 text-7xl font-semibold font-inter leading-tight mb-7 mt-7 ml-10" style={{ whiteSpace: 'nowrap' }}>
           Sua lista de <br /> Audiobooks está aqui!
         </div>
-        <div className="md:w-1/2 h-auto">
+        <div className="md:w-1/2 h-auto ml-auto">
           <img
-            src="https://images.pexels.com/photos/1420709/pexels-photo-1420709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="https://images.pexels.com/photos/3728084/pexels-photo-3728084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Audiobooks"
-            className="w-full max-w-[800px] h-auto"
+            className="w-full"
             style={{ marginRight: 0 }}
           />
         </div>
-
       </div>
 
       <div className="w-full h-1 bg-slate-500" />

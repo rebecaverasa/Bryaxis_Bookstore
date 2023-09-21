@@ -17,7 +17,7 @@ const Item = ({ item }) => {
       <img
         src={item.pictureUrl}
         alt={item.title}
-        className="w-32 h-auto mx-auto mb-4"
+        className="w-32 h-auto mx-auto mb-4 rounded-[20px]"
       />
 
       <h2 className="text-lg font-semibold">

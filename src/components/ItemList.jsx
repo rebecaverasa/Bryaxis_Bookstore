@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Item from './Item';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
-import { app } from '../services/firebase'
+import { app } from '../services/firebase';
 
 const ItemList = () => {
   const [items, setItems] = useState([]);
@@ -27,12 +27,28 @@ const ItemList = () => {
   }, []);
 
   return (
-    <div className="px-10"> {/* Adiciona espaço nas laterais */}
-      <h1 className="text-[#282a36] text-4xl font-bold text-center mb-7 mt-16">Catálogo</h1>
-      <div className="justify-center">
+    <div className="px-0 bg-[#f5f7f5]"> {/* Adiciona espaço nas laterais */}
+      <div className="flex flex-col md:flex-row justify-between items-center w-full">
+        <div className="md:w-1/2 text-slate-500 text-7xl font-semibold font-inter leading-tight mb-7 mt-7 ml-10" style={{ whiteSpace: 'nowrap' }}>
+          Sua lista de <br /> Audiobooks está aqui!
+        </div>
+        <div className="md:w-1/2 h-auto">
+          <img
+            src="https://images.pexels.com/photos/1420709/pexels-photo-1420709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Audiobooks"
+            className="w-full max-w-[800px] h-auto"
+            style={{ marginRight: 0 }}
+          />
+        </div>
+
+      </div>
+
+      <div className="w-full h-1 bg-slate-500" />
+
+      <div className="justify-center ml-10 mr-10">
         <div className="grid grid-cols-5 gap-2"> {/* Ajusta o espaçamento entre os produtos */}
           {items.map((item) => (
-            <div key={item.id} className="p-6 border border-gray-300 m-1"> {/* Adiciona a borda cinza */}
+            <div key={item.id} className="p-6 border border-gray-300"> {/* Adiciona a borda cinza */}
               <Item item={item} />
             </div>
           ))}

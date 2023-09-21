@@ -44,7 +44,7 @@ const ItemCount = ({ stock, onAddToCart }) => {
         </button>
       </div>
       <button
-        className="px-2 py-1 bg-[#bd93f9] text-white rounded-md hover:bg-black focus:outline-none"
+        className="px-2 py-1 bg-[#bd93f9] text-white rounded-md hover:bg-slate-500 focus:outline-none"
         onClick={handleAddToCartClick}
       >
         Adicionar ao carrinho

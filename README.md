@@ -17,3 +17,8 @@ This is a final project from the Coder House React Course. We were able to choos
 2 - Make sure you have the node.js and NPM on your machine. If you don't, you can download here https://nodejs.org/en <br>
 3 - On the project's directory, run: <b>npm install</b>. This will download all project dependencies listed in the package.json file to the node_modules folder. <br>
 4 - After the installation is complete, you can start the development server by running the following command: <b>npm run dev</b>
+
+<h2>Now It's up to you! Enjoy :)</h2>
+This project is for study purposes, so feel free to do the same, explore and change what ever you want! You can also contact me for tips or corrections on the code, i'm open to learn more. 
+
+

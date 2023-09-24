@@ -28,7 +28,7 @@ const ItemCount = ({ stock, onAddToCart }) => {
     <div className="flex flex-col items-center"> {/* Centraliza verticalmente */}
       <div className="flex items-center justify-center mb-2"> {/* Centraliza horizontalmente */}
         <button
-          className="px-2 py-0.5 bg-[#dfdfdf] text-gray-700 rounded-l-md hover:bg-[#dfdfdf] focus:outline-none"
+          className="px-2 py-0.5 bg-[#dfdfdf] text-gray-700 rounded-[20px] hover:bg-[#dfdfdf] focus:outline-none"
           onClick={handleDecrement}
         >
           -
@@ -37,14 +37,14 @@ const ItemCount = ({ stock, onAddToCart }) => {
           {quantity}
         </div>
         <button
-          className="px-2 py-0.5 bg-[#dfdfdf] text-gray-700 rounded-r-md hover:bg-[#dfdfdf] focus:outline-none"
+          className="px-2 py-0.5 bg-[#dfdfdf] text-gray-700 rounded-[20px] hover:bg-[#dfdfdf] focus:outline-none"
           onClick={handleIncrement}
         >
           +
         </button>
       </div>
       <button
-        className="px-2 py-1 bg-[#bd93f9] text-white rounded-md hover:bg-black focus:outline-none"
+        className="px-2 py-1 bg-[#bd93f9] text-white rounded-[20px] hover:bg-slate-500 focus:outline-none"
         onClick={handleAddToCartClick}
       >
         Adicionar ao carrinho

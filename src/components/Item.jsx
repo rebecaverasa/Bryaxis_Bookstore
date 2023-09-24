@@ -23,7 +23,7 @@ const Item = ({ item }) => {
       <h2 className="text-lg font-semibold">
         {item.title}
       </h2>
-      <p className="text-sm">${item.price.toFixed(2)}</p>
+      <p className="text-sm">R$ {item.price.toFixed(2)}</p>
       <p className="text-sm text-gray-600 mb-2">Em estoque: {item.stock}</p>
       <ItemDetailContainer description={item.description} onAddToCart={handleAddToCart} /> {/* Passa a descrição e a função handleAddToCart como props */}
     </div>

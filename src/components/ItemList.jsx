@@ -28,15 +28,15 @@ const ItemList = () => {
 
   return (
     <div className="px-0 bg-[#f5f7f5]"> {/* Adiciona espaço nas laterais */}
-      <div className="flex flex-col md:flex-row justify-between items-center w-full">
+      <div className="flex flex-col md:flex-row justify-between items-center w-full h-[480px]">
         <div className="md:w-1/2 text-slate-500 text-7xl font-semibold font-inter leading-tight mb-7 mt-7 ml-10" style={{ whiteSpace: 'nowrap' }}>
           Sua lista de <br /> Audiobooks está aqui!
         </div>
         <div className="md:w-1/2 h-auto ml-auto">
           <img
-            src="https://images.pexels.com/photos/3728084/pexels-photo-3728084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="/14.jpg" 
             alt="Audiobooks"
-            className="w-full"
+            className="h-[480px]"
             style={{ marginRight: 0 }}
           />
         </div>
